@@ -36,24 +36,44 @@ class ContactSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            'Get In Touch',
-            style: TextStyle(
-              fontSize: isMobile ? 28 : 36,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.flutter_dash,
+                size: 24,
+                color: Colors.white.withOpacity(0.9),
+              ),
+              const SizedBox(width: 10),
+              Text(
+                'Do you know this website made with Flutter ? 😎',
+                style: TextStyle(
+                  fontSize: isMobile ? 28 : 36,
+                  color: Colors.white.withOpacity(0.8),
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(height: 20),
-          Text(
-            'Feel free to reach out for collaborations or just a friendly chat!',
-            style: TextStyle(
-              fontSize: isMobile ? 16 : 18,
-              color: Colors.white.withOpacity(0.9),
-            ),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 60),
+          // Text(
+          //   'Get In Touch',
+          //   style: TextStyle(
+          //     fontSize: isMobile ? 28 : 36,
+          //     fontWeight: FontWeight.bold,
+          //     color: Colors.white,
+          //   ),
+          // ),
+          // const SizedBox(height: 20),
+          // Text(
+          //   'Feel free to reach out for collaborations or just a friendly chat!',
+          //   style: TextStyle(
+          //     fontSize: isMobile ? 16 : 18,
+          //     color: Colors.white.withOpacity(0.9),
+          //   ),
+          //   textAlign: TextAlign.center,
+          // ),
+          // const SizedBox(height: 40),
           Wrap(
             spacing: 20,
             runSpacing: 20,
@@ -96,6 +116,26 @@ class ContactSection extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
+          const SizedBox(height: 15),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   children: [
+          //     Icon(
+          //       Icons.flutter_dash,
+          //       size: 24,
+          //       color: Colors.white.withOpacity(0.9),
+          //     ),
+          //     const SizedBox(width: 10),
+          //     Text(
+          //       'Do you know this website made with Flutter?',
+          //       style: TextStyle(
+          //         fontSize: 14,
+          //         color: Colors.white.withOpacity(0.8),
+          //         fontWeight: FontWeight.w500,
+          //       ),
+          //     ),
+          //   ],
+          // ),
         ],
       ),
     );
@@ -164,7 +204,9 @@ class _ContactCardState extends State<_ContactCard> {
                 child: Icon(
                   widget.icon,
                   size: 28,
-                  color: _isHovered ? Colors.white : Theme.of(context).primaryColor,
+                  color: _isHovered
+                      ? Colors.white
+                      : Theme.of(context).primaryColor,
                 ),
               ),
               const SizedBox(height: 12),
@@ -181,10 +223,7 @@ class _ContactCardState extends State<_ContactCard> {
               const SizedBox(height: 6),
               Text(
                 widget.value,
-                style: TextStyle(
-                  fontSize: 13,
-                  color: Colors.grey[600],
-                ),
+                style: TextStyle(fontSize: 13, color: Colors.grey[600]),
                 textAlign: TextAlign.center,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -196,4 +235,3 @@ class _ContactCardState extends State<_ContactCard> {
     );
   }
 }
-

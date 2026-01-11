@@ -5,6 +5,7 @@ class CustomNavigationBar extends StatelessWidget {
   final VoidCallback onExperienceTap;
   final VoidCallback onSkillsTap;
   final VoidCallback onEducationTap;
+  final VoidCallback? onCampaignTap;
   final VoidCallback onContactTap;
 
   const CustomNavigationBar({
@@ -13,6 +14,7 @@ class CustomNavigationBar extends StatelessWidget {
     required this.onExperienceTap,
     required this.onSkillsTap,
     required this.onEducationTap,
+    this.onCampaignTap,
     required this.onContactTap,
   });
 

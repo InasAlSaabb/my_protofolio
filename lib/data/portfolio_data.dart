@@ -152,4 +152,22 @@ class PortfolioData {
     'Sound architecture',
     'Agile methodologies',
   ];
+
+  // Campaign/Call to Action Content
+  static const String campaignTitle = 'Ready to Build Something Amazing?';
+  static const String campaignSubtitle = 'Let\'s Create Exceptional Mobile Experiences Together';
+  static const String campaignDescription =
+      'With over 4 years of Flutter development expertise, I transform ideas into '
+      'powerful, user-friendly mobile applications. From concept to deployment, '
+      'I deliver solutions that drive results and exceed expectations.';
+  static const List<String> campaignHighlights = [
+    '🚀 Fast, scalable Flutter applications',
+    '📱 Cross-platform iOS & Android development',
+    '🔥 Modern UI/UX design implementation',
+    '⚡ Performance-optimized code',
+    '🔒 Secure authentication & data management',
+    '📈 Measurable business impact',
+  ];
+  static const String campaignCtaText = 'Start Your Project Today';
+  static const String campaignCtaDescription = 'Discuss your vision and let\'s build the future of mobile apps';
 }
